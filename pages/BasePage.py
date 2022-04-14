@@ -1,3 +1,5 @@
+from selenium.common.exceptions import TimeoutException
+
 from config.Config import TestData
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.ui import WebDriverWait
@@ -100,3 +102,5 @@ class BasePage:
             element = self.find_element(mark)
         return element.text
 
+    def wait(self, locator, text):
+        WebDriverWait(self.driver, 10).until(ec.text_to_be_present_in_element(locator, text))
