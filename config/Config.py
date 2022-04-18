@@ -2,6 +2,7 @@ class TestData:
     BASE_URL = "https://www.apple.com/"
 
     LANG_CODES = {
+        "USA": "",
         "Turkey": "tr/",
         "United Kingdom": "uk/",
         "Deutschland": "de/",
@@ -11,6 +12,13 @@ class TestData:
     }
 
     ASSERTIONS = {
+        "USA": {"main_title": "Apple",
+                "menu_text": "iPhone",
+                "iphone_title": "iPhone - Apple",
+                "menu_iphone_text": "iPhone 13 Pro\nNew",
+                "pro_title": "iPhone 13 Pro and iPhone 13 Pro Max - Apple",
+                "page_source": "Your bag is empty.",
+                "buy_button": "Buy\niPhone 13 Pro"},
         "Turkey": {"main_title": "Apple (Türkiye)",
                    "menu_text": "iPhone",
                    "iphone_title": "iPhone - Apple (TR)",
