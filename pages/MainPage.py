@@ -11,3 +11,7 @@ class MainPage(BasePage):
         super().__init__(driver)
         self.driver = driver
         self.navigate_to_url(TestData.BASE_URL + lang_code)
+
+    def click_to_iphone(self):
+        self.highlight(self.IPHONE, "red")
+        self.click_visibility(self.IPHONE)

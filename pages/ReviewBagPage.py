@@ -8,3 +8,7 @@ class ReviewBagPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+
+    def remove_iphone(self):
+        self.highlight(self.REMOVE_BUTTON, "red")
+        self.click_presence(self.REMOVE_BUTTON)

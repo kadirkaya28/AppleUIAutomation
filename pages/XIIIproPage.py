@@ -9,3 +9,7 @@ class XIIIproPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+
+    def click_purchase_button(self):
+        self.highlight(self.BUY_BUTTON, "red")
+        self.click_visibility(self.BUY_BUTTON)
