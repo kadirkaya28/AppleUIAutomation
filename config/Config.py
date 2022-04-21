@@ -1,6 +1,8 @@
 class TestData:
     BASE_URL = "https://www.apple.com/"
 
+    BROWSERS = ["chrome", "firefox", "opera"]
+
     LANG_CODES = {
         "USA": "",
         "Turkey": "tr/",
