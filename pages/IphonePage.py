@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-
 from pages.BasePage import BasePage
 
 
@@ -11,6 +10,6 @@ class IphonePage(BasePage):
         super().__init__(driver)
         self.driver = driver
 
-    def select_xii_pro(self):
+    def select_xiii_pro(self):
         self.highlight(self.XIII_PRO, "red")
-        self.click_visibility(self.XIII_PRO)
+        self.click(self.wait_for_visibility(self.XIII_PRO))

@@ -1,9 +1,8 @@
-from selenium.common.exceptions import TimeoutException
-
-from config.Config import TestData
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from config.Config import TestData
 import time
 
 
@@ -18,32 +17,22 @@ class BasePage:
     def find_element(self, locator) -> WebElement:
         return WebDriverWait(self.driver, self.timeout).until(ec.presence_of_element_located(locator))
 
-    def find_elements(self, locator) -> list[WebElement]:
+    def find_elements(self, locator) -> list:
         return WebDriverWait(self.driver, self.timeout).until(ec.presence_of_all_elements_located(locator))
 
-    @staticmethod
-    def find_element_under_specified_element(element: WebElement, locator) -> WebElement:
-        return element.find_element(*locator)
-
-    @staticmethod
-    def find_elements_under_specified_element(element: WebElement, locator) -> list[WebElement]:
-        return element.find_elements(*locator)
-
-    def click_visibility(self, mark) -> None:
+    def wait_for_visibility(self, mark) -> WebElement:
         if isinstance(mark, WebElement):
             element = mark
         else:
             element = WebDriverWait(self.driver, self.timeout).until(ec.visibility_of_element_located(mark))
-        element.click()
-        time.sleep(1)
+        return element
 
-    def click_presence(self, mark) -> None:
+    def wait_for_presence(self, mark) -> WebElement:
         if isinstance(mark, WebElement):
             element = mark
         else:
             element = WebDriverWait(self.driver, self.timeout).until(ec.presence_of_element_located(mark))
-        element.click()
-        time.sleep(1)
+        return element
 
     def click(self, mark) -> None:
         if isinstance(mark, WebElement):
@@ -75,20 +64,6 @@ class BasePage:
         time.sleep(effect_time)
         apply_style(original_style)
 
-    def is_visible(self, mark) -> bool:
-        if isinstance(mark, WebElement):
-            element = mark
-        else:
-            element = WebDriverWait(self.driver, self.timeout).until(ec.visibility_of_element_located(mark))
-        return bool(element)
-
-    def is_enabled(self, mark) -> bool:
-        if isinstance(mark, WebElement):
-            element = mark
-        else:
-            element = WebDriverWait(self.driver, self.timeout).until(ec.visibility_of_element_located(mark))
-        return element.is_enabled()
-
     def is_clickable(self, mark) -> bool:
         try:
             return bool(WebDriverWait(self.driver, 1).until(ec.element_to_be_clickable(mark)))
@@ -100,7 +75,7 @@ class BasePage:
             element = mark
         else:
             element = self.find_element(mark)
-        return element.text
 
-    def wait(self, locator, text):
-        WebDriverWait(self.driver, 10).until(ec.text_to_be_present_in_element(locator, text))
+        WebDriverWait(element, 3).until(lambda el: el.text != "")
+
+        return element.text
