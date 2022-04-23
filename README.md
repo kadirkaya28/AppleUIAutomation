@@ -4,3 +4,7 @@ Click [here](https://raw.githack.com/kadirkaya28/AppleUIAutomation/main/allure-r
 
 
 Note: Repo public olduğunda report linki açılacaktır !!!
+
+
+python 3.10+
+pip install -r requirements.txt
