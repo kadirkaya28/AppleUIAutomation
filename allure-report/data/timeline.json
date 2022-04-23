@@ -1,0 +1,251 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-JR3F5JL",
+    "children" : [ {
+      "name" : "17872-MainThread",
+      "children" : [ {
+        "name" : "test_buy_iphone[firefox-Italy-it/]",
+        "uid" : "82031cd500b52b20",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725474682,
+          "stop" : 1650725511544,
+          "duration" : 36862
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Italy'", "'firefox'", "'it/'" ]
+      }, {
+        "name" : "test_buy_iphone[firefox-USA-]",
+        "uid" : "86ce1eeeb836c5d8",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725436417,
+          "stop" : 1650725474682,
+          "duration" : 38265
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'USA'", "'firefox'", "''" ]
+      }, {
+        "name" : "test_buy_iphone[chrome-Italy-it/]",
+        "uid" : "6d83814746e92ae2",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725800947,
+          "stop" : 1650725835708,
+          "duration" : 34761
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Italy'", "'chrome'", "'it/'" ]
+      }, {
+        "name" : "test_buy_iphone[firefox-France-fr/]",
+        "uid" : "84e6722ce780050a",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725394450,
+          "stop" : 1650725436399,
+          "duration" : 41949
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'France'", "'firefox'", "'fr/'" ]
+      }, {
+        "name" : "test_buy_iphone[chrome-Spain-es/]",
+        "uid" : "2311d81100f4d72",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725642916,
+          "stop" : 1650725680166,
+          "duration" : 37250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Spain'", "'chrome'", "'es/'" ]
+      }, {
+        "name" : "test_buy_iphone[firefox-United Kingdom-uk/]",
+        "uid" : "ea8848372434bacd",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725545995,
+          "stop" : 1650725578365,
+          "duration" : 32370
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'United Kingdom'", "'firefox'", "'uk/'" ]
+      }, {
+        "name" : "test_buy_iphone[chrome-USA-]",
+        "uid" : "997d55e8552c8459",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725835717,
+          "stop" : 1650725873236,
+          "duration" : 37519
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'USA'", "'chrome'", "''" ]
+      }, {
+        "name" : "test_buy_iphone[firefox-Turkey-tr/]",
+        "uid" : "c9990c7da16cbb40",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725578365,
+          "stop" : 1650725606757,
+          "duration" : 28392
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Turkey'", "'firefox'", "'tr/'" ]
+      }, {
+        "name" : "test_buy_iphone[chrome-United Kingdom-uk/]",
+        "uid" : "a3a025569732d75e",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725706259,
+          "stop" : 1650725738662,
+          "duration" : 32403
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'United Kingdom'", "'chrome'", "'uk/'" ]
+      }, {
+        "name" : "test_buy_iphone[chrome-Turkey-tr/]",
+        "uid" : "40436bb5f77f4f1",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725680191,
+          "stop" : 1650725706251,
+          "duration" : 26060
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Turkey'", "'chrome'", "'tr/'" ]
+      }, {
+        "name" : "test_buy_iphone[chrome-France-fr/]",
+        "uid" : "b894aa83b82fb1ec",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725770842,
+          "stop" : 1650725800938,
+          "duration" : 30096
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'France'", "'chrome'", "'fr/'" ]
+      }, {
+        "name" : "test_buy_iphone[chrome-Deutschland-de/]",
+        "uid" : "6a148f106d5a77d2",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725738670,
+          "stop" : 1650725770834,
+          "duration" : 32164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Deutschland'", "'chrome'", "'de/'" ]
+      }, {
+        "name" : "test_buy_iphone[firefox-Spain-es/]",
+        "uid" : "7a0b3d58289a1ed6",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725511565,
+          "stop" : 1650725545981,
+          "duration" : 34416
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Spain'", "'firefox'", "'es/'" ]
+      }, {
+        "name" : "test_buy_iphone[firefox-Deutschland-de/]",
+        "uid" : "a2a5dbc6007b731",
+        "parentUid" : "69b897b9d89811a4fdf196526c40a1da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650725606765,
+          "stop" : 1650725639737,
+          "duration" : 32972
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'Deutschland'", "'firefox'", "'de/'" ]
+      } ],
+      "uid" : "69b897b9d89811a4fdf196526c40a1da"
+    } ],
+    "uid" : "086c706b1bb3883c127e08076b80810f"
+  } ]
+}

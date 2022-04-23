@@ -1,0 +1,141 @@
+[ {
+  "uid" : "2311d81100f4d72",
+  "name" : "test_buy_iphone[chrome-Spain-es/]",
+  "time" : {
+    "start" : 1650725642916,
+    "stop" : 1650725680166,
+    "duration" : 37250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84e6722ce780050a",
+  "name" : "test_buy_iphone[firefox-France-fr/]",
+  "time" : {
+    "start" : 1650725394450,
+    "stop" : 1650725436399,
+    "duration" : 41949
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86ce1eeeb836c5d8",
+  "name" : "test_buy_iphone[firefox-USA-]",
+  "time" : {
+    "start" : 1650725436417,
+    "stop" : 1650725474682,
+    "duration" : 38265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d83814746e92ae2",
+  "name" : "test_buy_iphone[chrome-Italy-it/]",
+  "time" : {
+    "start" : 1650725800947,
+    "stop" : 1650725835708,
+    "duration" : 34761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2a5dbc6007b731",
+  "name" : "test_buy_iphone[firefox-Deutschland-de/]",
+  "time" : {
+    "start" : 1650725606765,
+    "stop" : 1650725639737,
+    "duration" : 32972
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3a025569732d75e",
+  "name" : "test_buy_iphone[chrome-United Kingdom-uk/]",
+  "time" : {
+    "start" : 1650725706259,
+    "stop" : 1650725738662,
+    "duration" : 32403
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a0b3d58289a1ed6",
+  "name" : "test_buy_iphone[firefox-Spain-es/]",
+  "time" : {
+    "start" : 1650725511565,
+    "stop" : 1650725545981,
+    "duration" : 34416
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea8848372434bacd",
+  "name" : "test_buy_iphone[firefox-United Kingdom-uk/]",
+  "time" : {
+    "start" : 1650725545995,
+    "stop" : 1650725578365,
+    "duration" : 32370
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82031cd500b52b20",
+  "name" : "test_buy_iphone[firefox-Italy-it/]",
+  "time" : {
+    "start" : 1650725474682,
+    "stop" : 1650725511544,
+    "duration" : 36862
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a148f106d5a77d2",
+  "name" : "test_buy_iphone[chrome-Deutschland-de/]",
+  "time" : {
+    "start" : 1650725738670,
+    "stop" : 1650725770834,
+    "duration" : 32164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9990c7da16cbb40",
+  "name" : "test_buy_iphone[firefox-Turkey-tr/]",
+  "time" : {
+    "start" : 1650725578365,
+    "stop" : 1650725606757,
+    "duration" : 28392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b894aa83b82fb1ec",
+  "name" : "test_buy_iphone[chrome-France-fr/]",
+  "time" : {
+    "start" : 1650725770842,
+    "stop" : 1650725800938,
+    "duration" : 30096
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40436bb5f77f4f1",
+  "name" : "test_buy_iphone[chrome-Turkey-tr/]",
+  "time" : {
+    "start" : 1650725680191,
+    "stop" : 1650725706251,
+    "duration" : 26060
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "997d55e8552c8459",
+  "name" : "test_buy_iphone[chrome-USA-]",
+  "time" : {
+    "start" : 1650725835717,
+    "stop" : 1650725873236,
+    "duration" : 37519
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

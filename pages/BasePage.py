@@ -1,12 +1,15 @@
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.remote.webelement import WebElement
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
 from config.Config import TestData
-import time
 
 
 class BasePage:
+    BODY = (By.TAG_NAME, "body")
+
     def __init__(self, driver):
         self.driver = driver
         self.timeout = 10
@@ -20,33 +23,51 @@ class BasePage:
     def find_elements(self, locator) -> list:
         return WebDriverWait(self.driver, self.timeout).until(ec.presence_of_all_elements_located(locator))
 
-    def wait_for_visibility(self, mark) -> WebElement:
+    def get_element_text(self, mark) -> str:
         if isinstance(mark, WebElement):
             element = mark
         else:
-            element = WebDriverWait(self.driver, self.timeout).until(ec.visibility_of_element_located(mark))
-        return element
+            element = self.find_element(mark)
+        WebDriverWait(element, 3).until(lambda el: el.text != "")
+        return element.text
 
-    def wait_for_presence(self, mark) -> WebElement:
+    def get_title(self) -> str:
+        return self.driver.title
+
+    def static_wait(self, timeout=3) -> None:
+        try:
+            WebDriverWait(self.driver, timeout).until(lambda _: False)
+        except TimeoutException:
+            pass
+
+    def hover(self, mark) -> None:
         if isinstance(mark, WebElement):
             element = mark
         else:
-            element = WebDriverWait(self.driver, self.timeout).until(ec.presence_of_element_located(mark))
-        return element
+            element = self.find_element(mark)
+        hover = ActionChains(self.driver).move_to_element(element)
+        hover.perform()
 
     def click(self, mark) -> None:
         if isinstance(mark, WebElement):
             element = mark
         else:
-            element = WebDriverWait(self.driver, self.timeout).until(ec.element_to_be_clickable(mark))
+            element = WebDriverWait(self.driver, self.timeout).until(ec.presence_of_element_located(mark))
         element.click()
-        time.sleep(1)
+        self.static_wait(1)
+
+    def is_clickable(self, locator: tuple) -> bool:
+        try:
+            return bool(WebDriverWait(self.driver, self.timeout / 4).until(ec.element_to_be_clickable(locator)))
+        except TimeoutException:
+            return False
 
     def highlight(self, mark, color: str, effect_time=1, thickness=2, radius=10, background=False) -> None:
         if isinstance(mark, WebElement):
             element = mark
         else:
             element = self.find_element(mark)
+        self.hover(element)
         self.driver = element.parent
         original_style = element.get_attribute('style')
 
@@ -57,25 +78,5 @@ class BasePage:
             apply_style(f"background-color: {color};")
         else:
             apply_style(f"border: {thickness}px solid {color}; border-radius: {radius}px;")
-
-        # allure.attach(self.driver.get_screenshot_as_png(),
-        #               name=ctime(time.time()).replace(":", "_"),
-        #               attachment_type=AttachmentType.PNG)
-        time.sleep(effect_time)
+        self.static_wait(effect_time)
         apply_style(original_style)
-
-    def is_clickable(self, mark) -> bool:
-        try:
-            return bool(WebDriverWait(self.driver, 1).until(ec.element_to_be_clickable(mark)))
-        except TimeoutException:
-            return False
-
-    def get_element_text(self, mark) -> str:
-        if isinstance(mark, WebElement):
-            element = mark
-        else:
-            element = self.find_element(mark)
-
-        WebDriverWait(element, 3).until(lambda el: el.text != "")
-
-        return element.text

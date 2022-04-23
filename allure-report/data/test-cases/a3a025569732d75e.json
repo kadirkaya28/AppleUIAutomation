@@ -1,0 +1,184 @@
+{
+  "uid" : "a3a025569732d75e",
+  "name" : "test_buy_iphone[chrome-United Kingdom-uk/]",
+  "fullName" : "tests.test_BuyProduct.TestBuyProduct#test_buy_iphone",
+  "historyId" : "e8e3bbcdc1406722e98e6cac98d34ba9",
+  "time" : {
+    "start" : 1650725706259,
+    "stop" : 1650725738662,
+    "duration" : 32403
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "init_driver",
+    "time" : {
+      "start" : 1650725641112,
+      "stop" : 1650725642916,
+      "duration" : 1804
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1eab366862030b62",
+      "name" : "Sat Apr 23 17_55_07 2022",
+      "source" : "1eab366862030b62.png",
+      "type" : "image/png",
+      "size" : 262283
+    }, {
+      "uid" : "106267276d20ab8",
+      "name" : "Sat Apr 23 17_55_11 2022",
+      "source" : "106267276d20ab8.png",
+      "type" : "image/png",
+      "size" : 337873
+    }, {
+      "uid" : "a7f17072e1795fad",
+      "name" : "Sat Apr 23 17_55_14 2022",
+      "source" : "a7f17072e1795fad.png",
+      "type" : "image/png",
+      "size" : 485822
+    }, {
+      "uid" : "a8aa84e30b27b6bc",
+      "name" : "Sat Apr 23 17_55_20 2022",
+      "source" : "a8aa84e30b27b6bc.png",
+      "type" : "image/png",
+      "size" : 179120
+    }, {
+      "uid" : "1eed8b60522f59af",
+      "name" : "Sat Apr 23 17_55_21 2022",
+      "source" : "1eed8b60522f59af.png",
+      "type" : "image/png",
+      "size" : 254134
+    }, {
+      "uid" : "af8a88b10704d833",
+      "name" : "Sat Apr 23 17_55_23 2022",
+      "source" : "af8a88b10704d833.png",
+      "type" : "image/png",
+      "size" : 196909
+    }, {
+      "uid" : "b6e3a669a2e0c5f5",
+      "name" : "Sat Apr 23 17_55_24 2022",
+      "source" : "b6e3a669a2e0c5f5.png",
+      "type" : "image/png",
+      "size" : 219340
+    }, {
+      "uid" : "79056f23137ea155",
+      "name" : "Sat Apr 23 17_55_26 2022",
+      "source" : "79056f23137ea155.png",
+      "type" : "image/png",
+      "size" : 219004
+    }, {
+      "uid" : "55c49697dbc77525",
+      "name" : "Sat Apr 23 17_55_26 2022",
+      "source" : "55c49697dbc77525.png",
+      "type" : "image/png",
+      "size" : 208457
+    }, {
+      "uid" : "4a8afe9e91bc49c0",
+      "name" : "Sat Apr 23 17_55_32 2022",
+      "source" : "4a8afe9e91bc49c0.png",
+      "type" : "image/png",
+      "size" : 168207
+    }, {
+      "uid" : "55bd05c9f24ac9ae",
+      "name" : "Sat Apr 23 17_55_36 2022",
+      "source" : "55bd05c9f24ac9ae.png",
+      "type" : "image/png",
+      "size" : 129550
+    }, {
+      "uid" : "7e0653428df899ca",
+      "name" : "stdout",
+      "source" : "7e0653428df899ca.txt",
+      "type" : "text/plain",
+      "size" : 61
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 12,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "init_driver::0",
+    "time" : {
+      "start" : 1650725873238,
+      "stop" : 1650725879488,
+      "duration" : 6250
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('init_driver')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_BuyProduct"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBuyProduct"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-JR3F5JL"
+  }, {
+    "name" : "thread",
+    "value" : "17872-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_BuyProduct"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "country",
+    "value" : "'United Kingdom'"
+  }, {
+    "name" : "init_driver",
+    "value" : "'chrome'"
+  }, {
+    "name" : "shortcode",
+    "value" : "'uk/'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('init_driver')" ]
+  },
+  "source" : "a3a025569732d75e.json",
+  "parameterValues" : [ "'United Kingdom'", "'chrome'", "'uk/'" ]
+}

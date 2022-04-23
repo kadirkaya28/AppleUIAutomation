@@ -3,7 +3,6 @@ from pages.BasePage import BasePage
 
 
 class IphonePage(BasePage):
-    # noinspection SpellCheckingInspection
     XIII_PRO = (By.CSS_SELECTOR, ".chapternav-item-iphone-13-pro a")
 
     def __init__(self, driver):
@@ -12,4 +11,4 @@ class IphonePage(BasePage):
 
     def select_xiii_pro(self):
         self.highlight(self.XIII_PRO, "red")
-        self.click(self.wait_for_visibility(self.XIII_PRO))
+        self.click(self.XIII_PRO)

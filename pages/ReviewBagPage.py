@@ -11,4 +11,4 @@ class ReviewBagPage(BasePage):
 
     def remove_iphone(self):
         self.highlight(self.REMOVE_BUTTON, "red")
-        self.click(self.wait_for_presence(self.REMOVE_BUTTON))
+        self.click(self.REMOVE_BUTTON)

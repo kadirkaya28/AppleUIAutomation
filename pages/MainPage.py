@@ -12,14 +12,14 @@ class MainPage(BasePage):
         self.navigate_to_url(TestData.BASE_URL + lang_code)
 
     def click_to_store(self):
-        raise NotImplemented
+        raise NotImplementedError
 
     def click_to_mac(self):
-        raise NotImplemented
+        raise NotImplementedError
 
     def click_to_ipad(self):
-        raise NotImplemented
+        raise NotImplementedError
 
     def click_to_iphone(self):
         self.highlight(self.IPHONE, "red")
-        self.click(self.wait_for_visibility(self.IPHONE))
+        self.click(self.IPHONE)

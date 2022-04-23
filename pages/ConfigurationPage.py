@@ -11,8 +11,6 @@ class ConfigurationPage(BasePage):
     PAYMENT_OPTIONS = (By.NAME, "purchase_option")  # click index 1 : One Time Payment
     APPLE_CARE = (By.ID, "applecareplus_59_noapplecare")
     ADD_BUTTON = (By.NAME, "add-to-cart")
-    OPTIONS = (By.CLASS_NAME, "rc-dimension-selector-group")
-    TAG = (By.TAG_NAME, "div")
     REVIEW_BAG = (By.NAME, "proceed")
 
     def __init__(self, driver):
@@ -20,32 +18,31 @@ class ConfigurationPage(BasePage):
         self.driver = driver
 
     def configure_iphone_specs(self, model: int = 1, capacity: int = 3):
-        max_phone = self.find_elements(self.PRO_OR_MAX)[model]
-        self.click(self.wait_for_presence(max_phone))
+        max_phone = self.find_elements(self.PRO_OR_MAX).pop(model)
+        self.click(max_phone)
+        self.click(self.COLORS)
 
-        self.click(self.wait_for_presence(self.COLORS))
-
-        capacity_selection = self.find_elements(self.CAPACITY)[capacity]
-        self.click(self.wait_for_presence(capacity_selection))
+        capacity_selection = self.find_elements(self.CAPACITY).pop(capacity)
+        self.click(capacity_selection)
 
     def configure_additional_options(self, country, carrier: int = 4, payment: int = 1):
         if country == "Turkey":
             return None
         elif country == "USA":
-            no_carrier = self.find_elements(self.CARRIERS)[carrier]
-            self.click(self.wait_for_presence(no_carrier))
+            no_carrier = self.find_elements(self.CARRIERS).pop(carrier)
+            self.click(no_carrier)
 
-        self.click(self.wait_for_presence(self.NO_TRADE))
+        self.click(self.NO_TRADE)
 
         if country != "France":
-            payment_option = self.find_elements(self.PAYMENT_OPTIONS)[payment]
-            self.click(self.wait_for_presence(payment_option))
+            payment_option = self.find_elements(self.PAYMENT_OPTIONS).pop(payment)
+            self.click(payment_option)
 
-        self.click(self.wait_for_presence(self.APPLE_CARE))
+        self.click(self.APPLE_CARE)
 
     def go_to_bag(self):
         self.highlight(self.ADD_BUTTON, "red")
-        self.click(self.wait_for_presence(self.ADD_BUTTON))
+        self.click(self.ADD_BUTTON)
 
         self.highlight(self.REVIEW_BAG, "red")
-        self.click(self.wait_for_presence(self.REVIEW_BAG))
+        self.click(self.REVIEW_BAG)
