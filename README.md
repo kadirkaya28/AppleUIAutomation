@@ -6,15 +6,12 @@
 [![PyTest](https://img.shields.io/badge/PyTest-orange?style=flat&logo=pytest)](https://docs.pytest.org/en/6.2.x/)
 [![Allure](https://img.shields.io/badge/Allure-blue?style=flat&logo=java)](https://docs.qameta.io/allure/)
 
+&nbsp;
+&nbsp;
 
-"""
+UI Automation using Page Object Model with Python
 
-
-Proje Tanımı
-
-
-"""
-
+&nbsp;
 &nbsp;
 
 **Test Case: Buy Product**
